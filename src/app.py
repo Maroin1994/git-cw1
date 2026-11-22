@@ -1,5 +1,7 @@
 # Notatnik – prosty program konsolowy do nauki Gita.
 
+from price import calculate_price
+
 # Lista przechowująca dodane notatki.
 notes = []
 
@@ -19,6 +21,9 @@ def main():
     print("Witaj w aplikacji Notatnik")
     add_note("pierwsza notatka")
     print("Liczba notatek:", count_notes())
+    result = calculate_price(100)
+    print(result)
+
 
 
 if __name__ == "__main__":
