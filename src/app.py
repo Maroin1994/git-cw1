@@ -21,7 +21,7 @@ def main():
     print("Witaj w aplikacji Notatnik")
     add_note("pierwsza notatka")
     print("Liczba notatek:", count_notes())
-    result = calculate_price(100)
+    result = calculate_price(100, count_notes())
     print(result)
 
 
